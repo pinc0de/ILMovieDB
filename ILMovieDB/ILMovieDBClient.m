@@ -29,7 +29,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 #if DEBUG
-        NSString *baseUrl = kILMovieDBBaseURL;
+        NSString *baseUrl = kILMovieDBBaseURL;//kILMovieDBBaseURL;
 #else
         NSString *baseUrl = kILMovieDBBaseURLSSL;
 #endif
@@ -52,6 +52,16 @@
     if ([path rangeOfString:@":id"].location != NSNotFound) {
         NSParameterAssert(parameters[@"id"]);
         path = [path stringByReplacingOccurrencesOfString:@":id" withString:parameters[@"id"]];
+    }
+    
+    if ([path rangeOfString:@":season_number"].location != NSNotFound) {
+        NSParameterAssert(parameters[@"season_number"]);
+        path = [path stringByReplacingOccurrencesOfString:@":season_number" withString:parameters[@"season_number"]];
+    }
+    
+    if ([path rangeOfString:@":episode_number"].location != NSNotFound) {
+        NSParameterAssert(parameters[@"episode_number"]);
+        path = [path stringByReplacingOccurrencesOfString:@":episode_number" withString:parameters[@"episode_number"]];
     }
 
     requestOperation = [self GET:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

@@ -50,9 +50,52 @@ extern NSString * const kILMovieDBMovieTheatres;
 extern NSString * const kILMovieDBMoviePopular;
 extern NSString * const kILMovieDBMovieTopRated;
 
+#pragma mark - Tv
+
+extern NSString * const kILMovieDBTv;
+extern NSString * const kILMovieDBTvAccountStates;
+extern NSString * const kILMovieDBTvAlternativeTitles;
+extern NSString * const kILMovieDBTvChanges;
+extern NSString * const kILMovieDBTvContentRatings;
+extern NSString * const kILMovieDBTvCredits;
+extern NSString * const kILMovieDBTvExternalIds;
+extern NSString * const kILMovieDBTvImages;
+extern NSString * const kILMovieDBTvKeywords;
+extern NSString * const kILMovieDBTvRating;
+extern NSString * const kILMovieDBTvSimilar;
+extern NSString * const kILMovieDBTvTranslations;
+extern NSString * const kILMovieDBTvVideos;
+extern NSString * const kILMovieDBTvLatest;
+extern NSString * const kILMovieDBTvOnTheAir;
+extern NSString * const kILMovieDBTvAiringToday;
+extern NSString * const kILMovieDBTvTopRated;
+extern NSString * const kILMovieDBTvPopular;
+
+#pragma mark - Tv Seasons
+
+extern NSString * const kILMovieDBTvSeason;
+extern NSString * const kILMovieDBTvSeasonChanges;
+extern NSString * const kILMovieDBTvSeasonCredits;
+extern NSString * const kILMovieDBTvSeasonExternalIds;
+extern NSString * const kILMovieDBTvSeasonImages;
+extern NSString * const kILMovieDBTvSeasonVideos;
+
+
+#pragma mark - Tv Episodes
+
+extern NSString * const kILMovieDBTvEpisode;
+extern NSString * const kILMovieDBTvEpisodeChanges;
+extern NSString * const kILMovieDBTvEpisodeAccountStates;
+extern NSString * const kILMovieDBTvEpisodeCredits;
+extern NSString * const kILMovieDBTvEpisodeExternalIds;
+extern NSString * const kILMovieDBTvEpisodeImages;
+extern NSString * const kILMovieDBTvEpisodeRating;
+extern NSString * const kILMovieDBTvEpisodeVideos;
+
 #pragma mark - Genres
 
-extern NSString * const kILMovieDBGenreList;
+extern NSString * const kILMovieDBGenreList;  // needs changing
+extern NSString * const kILMovieDBTvGenreList;
 extern NSString * const kILMovieDBGenreMovies;
 
 #pragma mark - Collections
@@ -63,6 +106,7 @@ extern NSString * const kILMovieDBCollectionImages;
 #pragma mark - Search
 
 extern NSString * const kILMovieDBSearchMovie;
+extern NSString * const kILMovieDBSearchTvShow;
 extern NSString * const kILMovieDBSearchPerson;
 extern NSString * const kILMovieDBSearchCollection;
 extern NSString * const kILMovieDBSearchList;
@@ -105,6 +149,7 @@ extern NSString * const kILMovieDBReview;
 
 extern NSString * const kILMovieDBChangesMovie;
 extern NSString * const kILMovieDBChangesPerson;
+extern NSString * const kILMovieDBChangesTv;
 
 #pragma mark - Jobs
 
